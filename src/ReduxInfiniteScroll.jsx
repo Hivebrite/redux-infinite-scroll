@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 //import ImmutablePropTypes from 'react-immutable-proptypes';
 
@@ -111,29 +112,29 @@ export default class ReduxInfiniteScroll extends React.Component {
 }
 
 ReduxInfiniteScroll.propTypes = {
-  elementIsScrollable: React.PropTypes.bool,
-  containerHeight: React.PropTypes.oneOfType([
-    React.PropTypes.number,
-    React.PropTypes.string
+  elementIsScrollable: PropTypes.bool,
+  containerHeight: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string
   ]),
-  threshold: React.PropTypes.number,
-  hasMore: React.PropTypes.bool,
-  loadingMore: React.PropTypes.bool,
-  loader: React.PropTypes.any,
-  showLoader: React.PropTypes.bool,
-  loadMore: React.PropTypes.func.isRequired,
-  items: React.PropTypes.oneOfType([
+  threshold: PropTypes.number,
+  hasMore: PropTypes.bool,
+  loadingMore: PropTypes.bool,
+  loader: PropTypes.any,
+  showLoader: PropTypes.bool,
+  loadMore: PropTypes.func.isRequired,
+  items: PropTypes.oneOfType([
     //ImmutablePropTypes.list,
-    React.PropTypes.array
+    PropTypes.array
   ]),
-  children: React.PropTypes.oneOfType([
+  children: PropTypes.oneOfType([
     //ImmutablePropTypes.list,
-    React.PropTypes.array
+    PropTypes.array
   ]),
-  holderType: React.PropTypes.string,
-  className: React.PropTypes.oneOfType([
-    React.PropTypes.string,
-    React.PropTypes.func
+  holderType: PropTypes.string,
+  className: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func
   ])
 };
 

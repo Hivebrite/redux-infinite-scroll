@@ -45,6 +45,7 @@
     "karma-sourcemap-loader": "^0.3.6",
     "karma-webpack": "^1.7.0",
     "phantomjs": "^1.9.18",
+    "prop-types": "15.6.2",
     "react-addons-test-utils": "^0.14.6",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
@@ -54,6 +55,5 @@
     "react-dom": "^0.14.6",
     "react-immutable-proptypes": "^1.7.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
